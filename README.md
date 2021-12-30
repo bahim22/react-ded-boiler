@@ -1,38 +1,35 @@
 
 # Dionysus Era Dev **rxtWpD2**
 
-
-## Notes for New React App
-
-| **Build Info** | **Description**                                                                 |
-| ------------ | --------------------------------------------------------------------------------- |
-| Frame    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor |
-| Config   | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor |
-| Api      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor |
-| Deploy   | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor |
-| Pages    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor |
-| Compos   | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor |
-
-### Meta Info
+## Info
 
 ---
-title: 'rxtWpD2'
-
-author: 'Hima Balde'
-
-date: 2021/12/29
-
-description: React App w/ custom WP configs and CSS
-
+Title: `rxtWpD2`
+author: `Hima 'Dionysus Bahim' Balde`
+date: 2021/12/30
+description: Custom React App w/ custom WebPack & Babel configs
 tag: web dev
 
 ---
+
+### Notes for New React App
+
+| **Build Info** | **Description**                                            |
+| ------------ | ----------------------------------------------------------|
+| Frame    | `React` App built with `JSX` `TypeScript` `HTML` `CSS` |
+| Config   | `Webpack` Bundler `Babel` Transpiler `NPM/npx` Package Mngr |
+| Style    | `Semantic-UI` `Tailwindcss` `React-Bootstrap` `CSS-Modules` |
+| Deploy   | [DionysusEra](dio-nxt-app.vercel.app/) on `Vercel` |
+| Pages    | _Landing Page, About Page, Contact Page, Documentation_ |
+| Outline   | _Components, layout, dynamic-routing, SSR, API_ |
+
+...
 
 ``` jsx
 
 import React from 'react'
 
-export default function notes() {
+export default function Black() {
     return (
         <div>
             <Link>
@@ -44,49 +41,27 @@ export default function notes() {
 }//Inline `code` example
 ```
 
-```js
+### Advanced Usage and Next Projects
 
-export default function Nextra({ Component, pageProps }) {
-  return (
-    <>
-      <Head>
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          title="RSS"
-          href="/feed.xml"
-        />
-        <link
-          rel="preload"
-          href="/fonts/Inter-roman.latin.var.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-      </Head>
-      <Component {...pageProps} />
-    </>
-  )
-}
-```
+| ------------------------------------------------------------------------------------------- |
+`Next Steps` adding api, adjusting designs, adding pages, optimizing for search engine
+`Problems and Solutions` describe issues ppl may see and how to fix
+`Contact Info` let people know i'm here to help, also give info and resources for more help
+| ----------------------------------------------------------------------------------------- |
 
-#### Emphasis
+...
 
-- **This is bold text**
-- _This is italic text_
-- ~~Strikethrough~~
-- `Blockquotes` > Develop. Preview. Ship. – Vercel
+#### Links
 
-##### Links
-
-1. [Next.js](https://nextjs.org)
-2. [Tut/Temp](https://esausilva.com/2018/01/13/learn-webpack-for-react/)
-3. [Vercel](http://vercel.com)
-
-###### Fin
+1. [Next.js](https://nextjs.org) [Vercel](http://vercel.com)
+2. `**Templates**`
+  -[Tut/Temp](https://dev.to/iamismile/how-to-setup-webpack-and-babel-for-react-59ph/)
+  -[Tut/Temp2](https://dev.to/deadwing7x/setup-a-react-app-with-webpack-and-babel-4o3k)
 
 - Footnote [^1].
 
-[^1]: Footnote **can have markup**
+[^1]: Footnote **GitHub Profile for{...}** **[`Hima-Balde`](https://github.com/bahim22)**
+[^1]: Footnote **Deployed Projects:**
 
-footnote info
+  `DED` > Business Profile `Inner Sity Market` > Marketing Business App
+  `Ibrahima Balde` > Portfolio Site `Dionysus Era Blog` >Business Blog
