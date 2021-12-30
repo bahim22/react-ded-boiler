@@ -74,6 +74,11 @@ module.exports = {
 "start": "webpack-dev-server"
 ```
 
+> NPM
+
+- you can use `--save-dev` to seperate dev dep from production dep
+- j
+
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 ### Package Descriptions
@@ -86,8 +91,8 @@ module.exports = {
 > `Babel`
 
 - @babel/core  _main dep for Babel_ --transpiler--
-- @babel/preset-env lets you code es '15-'17 & Babel  auto detect/transpile
-- @babel/preset-react (ID that it's a react app)
+- @babel/preset-env lets you code es'15-'17 & Babel auto detect/transpile
+- @babel/preset-react (ID that it's a react app to convert jsx to JS)
 - ~@babel/plugin-proposal-class-properties (Use class properties)~
 - @babel/plugin-syntax-dynamic-import, _dynamic import/exports_
 
@@ -95,12 +100,13 @@ module.exports = {
 
 - auto-prefixer, post-css-preset-env _css-modules_ _css-loaders_
 - semantic-ui-react, reactstrap, tailwindcss
-- html-webpack-plugin _pre-gen html doc w  temp or make your own_
+
 - style-loader— Adds CSS to the DOM by injecting a < style > tag
 
 > `WebPack`
 
-- webpack _Module bundler_
+- webpack _Module bundler_ to convert code into prod ready site
+- html-webpack-plugin _pre-gen basic html doc  or make your own_
 - webpack-nano _Webpack CLI_
 - webpack-plugin-serve _dev server via local_
 - npm-run-all: _run several npm Rx concurrently or simul.._

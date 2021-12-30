@@ -49,9 +49,22 @@ my-app/
     - **index.js**_js entry point_
     - logo.svg
 
+### More info for main files
+
 1. Put all JS and CSS files in src
-2. Only file in public dir can be used by/from index.html
-3. index.html is what's visibile to your users
+2.`index.html`
+**Contains**
+>
+- what's visibile to your users
+- Only files inside the `public` folder can be referenced from the HTML.
+- You can add webfonts, meta tags, or analytics to this file.
+- The build step will place the bundled scripts into the `< body>` tag where react hooks into the root div
+- The build script for bundler
+
+```html
+  <script src="./bundle.js "></script>
+  ```
+-
 
 ...
 
