@@ -1,5 +1,5 @@
 
-# rxtWpD2
+# Dionysus Era Dev **rxtWpD2**
 
 
 ## Notes for New React App
@@ -77,29 +77,16 @@ export default function Nextra({ Component, pageProps }) {
 - ~~Strikethrough~~
 - `Blockquotes` > Develop. Preview. Ship. – Vercel
 
-##### List `Unordered` `Ordered`
->
-- Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit
-- Integer molestie lorem at massa
+##### Links
 
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
+1. [Next.js](https://nextjs.org)
+2. [Tut/Temp](https://esausilva.com/2018/01/13/learn-webpack-for-react/)
+3. [Vercel](http://vercel.com)
 
-###### Links
-
-- [Next.js](https://nextjs.org)
-- [Nextra](https://nextra.vercel.app/)
-- [Vercel](http://vercel.com)
-
-###### Footnotes
+###### Fin
 
 - Footnote [^1].
-- Footnote [^2].
 
 [^1]: Footnote **can have markup**
 
-and multiple paragraphs.
-
-[^2]: Footnote text.
+footnote info
