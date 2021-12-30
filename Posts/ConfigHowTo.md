@@ -53,6 +53,14 @@ tag: web dev, jsx, tsx, mdx
 
 ## WEBPACK config file
 
+```bash
+
+npm install webpack webpack-cli webpack-dev-server --save-dev
+npm install webpack webpack-cli --save-dev
+
+
+```
+
 ```jsx
 
 module.exports = {

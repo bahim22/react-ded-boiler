@@ -20,7 +20,7 @@ tag: web dev, jsx, tsx, mdx
 >Directory Structure
 
 - `**Public**`
-- `index.html` _gateway_ of the react app that's being loaded via _root id_
+- `index.html` _gateway_ of the react app that's being loaded via _root id_ which is where the app will run
 - `**Src**`
   - `index.js` _imports, renders_ , it's the projects JS **entry-point**
   - `App.js` contains root app component, all project compo and pushed to _root div_
@@ -51,6 +51,7 @@ my-app/
 
 1. Put all JS and CSS files in src
 2. Only file in public dir can be used by/from index.html
+3. index.html is what's visibile to your users
 
 ...
 
