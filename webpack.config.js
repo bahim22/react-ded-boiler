@@ -1,13 +1,59 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { WebpackPluginServe } = require('webpack-plugin-serve');
-
-const port = process.env.PORT || 3000;
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  // Webpack configuration goes here
-};
+  // Where files should be sent once they are bundled
+  entry: './src/index.js',
+  output: {
+   path: path.join(__dirname, '/dist'),
+   filename: 'bundle.js'
+ },
+  // webpack 5 comes with devServer which loads in development mode
+ devServer: {
+   port: 3000,
+   watchContentBase: true
+ },
+  // Rules of how webpack will take our files, complie & bundle them for the browser
+ module: {
+   rules: [
+     {
+       test: /\.(js|jsx)$/,
+       exclude: /nodeModules/,
+       use: {
+         loader: 'babel-loader'
+       }
+     },
+     {
+       test: /\.css$/,
+       use: ['style-loader', 'css-loader']
+     }
+   ]
+ },
+ plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
+}
 
 /**
+ * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ *
+ * const path = require('path');
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        filename: 'bundle.js',
+        path: path.join(__dirname, 'public')
+    }
+};
+const path = require('path');
+
+module.exports = {
+  entry: './src/app.js',
+  output: {
+    path: path.join(__dirname, 'public'),
+    filename: 'bundle.js'
+  }
+};
+
+ * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
  * const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -41,4 +87,24 @@ module.exports = {
   // add a custom index.html as the template
   plugins: [new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'index.html') })]
 };
+
+//////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const path = require('path');
+module.exports = {
+    entry: './src/index.js',
+    output: {
+            filename: 'bundle.js',
+            path: path.join(__dirname, 'public')
+    },
+    module: {
+            rules: [{
+                loader: 'babel-loader',
+                test: /\.js$/,
+                exclude: /node_modules/
+            }]
+    },
+    mode: 'development'
+};
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
  */
