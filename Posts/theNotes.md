@@ -47,6 +47,9 @@ npm install react react-dom bootstrap jquery popper.js lodash react-hot-loader
 
 ```bash
 npm install @babel/core@7.15.0 @babel/preset-env@7.15.0 @babel/preset-react@7.14.5
+```
+
+```js
 const path = require('path');
 
 module.exports = {
@@ -56,5 +59,4 @@ module.exports = {
     filename: 'bundle.js'
   }
 };
-
 ```

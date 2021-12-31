@@ -1,60 +1,4 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-
-module.exports = {
-  // Where files should be sent once they are bundled
-  entry: './src/index.js',
-  output: {
-   path: path.join(__dirname, '/dist'),
-   filename: 'bundle.js'
- },
-  // webpack 5 comes with devServer which loads in development mode
- devServer: {
-   port: 3000,
-   watchContentBase: true
- },
-  // Rules of how webpack will take our files, complie & bundle them for the browser
- module: {
-   rules: [
-     {
-       test: /\.(js|jsx)$/,
-       exclude: /nodeModules/,
-       use: {
-         loader: 'babel-loader'
-       }
-     },
-     {
-       test: /\.css$/,
-       use: ['style-loader', 'css-loader']
-     }
-   ]
- },
- plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
-}
-
-/**
- * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
- *
- * const path = require('path');
-module.exports = {
-    entry: './src/index.js',
-    output: {
-        filename: 'bundle.js',
-        path: path.join(__dirname, 'public')
-    }
-};
 const path = require('path');
-
-module.exports = {
-  entry: './src/app.js',
-  output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js'
-  }
-};
-
- * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
- * const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -67,7 +11,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     // the filename of the JS bundle will be bundle.js
     filename: 'bundle.js'
-  },
+  },  // Rules of how webpack will take our files, complie & bundle them for the browser
   module: {
     rules: [
       {
@@ -77,17 +21,21 @@ module.exports = {
         exclude: /node_modules/,
         // use the babel-loader for transpiling JavaScript to a suitable format
         loader: 'babel-loader',
-        options: {
-          // attach the presets to the loader (most projects use .babelrc file instead)
-          presets: ["@babel/preset-env", "@babel/preset-react"]
-        }
-      }
+      },
+      {
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
+    }
     ]
   },
   // add a custom index.html as the template
-  plugins: [new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'index.html') })]
+  plugins: [new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'public', 'index.html') })]
 };
+/**
+ * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
+ * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ *
 //////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 const path = require('path');
 module.exports = {
@@ -107,4 +55,67 @@ module.exports = {
 };
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
- */
+import { join } from 'path'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+
+export const entry = './src/index.js'
+export const output = {
+  path: join(__dirname, '/public'),
+  filename: 'bundle.js'
+}
+export const devServer = {
+  port: 3000,
+  watchContentBase: true
+}
+export const module = {
+  rules: [
+    {
+      test: /\.(js|jsx)$/,
+      exclude: /nodeModules/,
+      use: {
+        loader: 'babel-loader'
+      }
+    },
+    {
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
+    }
+  ]
+}
+export const plugins = [new HtmlWebpackPlugin({ template: './src/index.html' })]
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+module.exports = {
+  // Where files should be sent once they are bundled
+  entry: './src/index.js',
+  output: {
+   path: path.join(__dirname, '/public'),
+   filename: 'bundle.js'
+ },
+  // webpack 5 comes with devServer which loads in development mode
+ devServer: {
+   port: 5522,
+   watchContentBase: true
+ },
+  // Rules of how webpack will take our files, complie & bundle them for the browser
+ module: {
+   rules: [
+     {
+       test: /\.(js|jsx)$/,
+       exclude: /nodeModules/,
+       use: {
+         loader: 'babel-loader'
+       }
+     },
+     {
+       test: /\.css$/,
+       use: ['style-loader', 'css-loader']
+     }
+   ]
+ },
+ plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
+};
+
+*/
