@@ -4,24 +4,11 @@ import './App.css'
 
 function App() {
     return (
-    <>
-      <div className="App">
-        <NavBar />
-      </div>
-      <div>
-        <ScrollMod />
-      </div>
-        <Black />
-    </>
+    <container>
+      <h1>Welcome to DED</h1>
+      <Black />
+    </container>
     )
 }
 
 export default App
-
-/*
-export const Date = {new Date().toDateString()}
-
-export const name = "DED Rxt Pro"
-
-export const siteTitle = "Dionysus Era RxtWp"
-*/

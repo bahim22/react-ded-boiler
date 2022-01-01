@@ -63,5 +63,8 @@ export default function Black() {
 [^1]: Footnote **GitHub Profile for{...}** **[`Hima-Balde`](https://github.com/bahim22)**
 [^1]: Footnote **Deployed Projects:**
 
-  `DED` > Business Profile `Inner Sity Market` > Marketing Business App
-  `Ibrahima Balde` > Portfolio Site `Dionysus Era Blog` >Business Blog
+  -`DED` > Business Profile
+  -`Inner Sity Market` > Marketing Business App
+  -`Ibrahima Balde` > Portfolio Site
+  -`Dionysus Era Blog` >Business Blog
+  
