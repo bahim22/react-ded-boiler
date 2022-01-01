@@ -29,25 +29,25 @@ tag: web dev
 
 import React from 'react'
 
-export default function Black() {
-    return (
-        <div>
-            <Link>
-                <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/pretty-little-fears-feat-j-cole/1434345841?i=1434346001">To baby Mama and Mamas</iframe>
-
-            </Link>
-        </div>
-    )
-}//Inline `code` example
+export default Black = () => {
+   return (
+    <div>
+        <Link>
+            <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150">
+            Last Ones Left
+            </iframe>
+        </Link>
+    </div>
+   )};
 ```
 
-### Advanced Usage and Next Projects
+### Boilerplate Usage and Next Projects
 
-| ------------------------------------------------------------------------------------------- |
-`Next Steps` adding api, adjusting designs, adding pages, optimizing for search engine
-`Problems and Solutions` describe issues ppl may see and how to fix
-`Contact Info` let people know i'm here to help, also give info and resources for more help
-| ----------------------------------------------------------------------------------------- |
+|`Contact me` Let me know what you think of the code. |
+| -------------------------------------------------- |
+|`Next Steps` adding api, cloning to diff repo, adding pages, design, SEO  |
+| -/-/-/-/-/-/-/-/-/-/-/-/-\-\-\-\-\-\-\-\-\-\-2-2-/-/-/-/-/-/-/-/-/-/-/---|
+
 
 ...
 
