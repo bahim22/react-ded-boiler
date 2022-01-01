@@ -89,11 +89,25 @@ babel-loader: Webpack loader that hooks Babel into webpack. We will run Babel fr
 - add babel info in the webpack.config.js file and configure
 - create `.babelrc` file and add presets and plugin configs
 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 ### EsLint
+
+```bash
+npm --save-dev install eslint eslint-loader babel-eslint eslint-config-react eslint-plugin-react
+```
+
+install dep then run eslint --init
+
+\\\\\\\\\\\\\\\\\\\\\\\\
+
+### Prettier
 
 ```bash
 npm install
 ```
+
+\\\\\\\\\\\\\\\\\\\\\\\\
 
 ### CSS
 
@@ -104,13 +118,42 @@ npm install
 - Less
 _ Bootstrap
 - Tailwind
-- Semantic UI
+- `Semantic UI`
 - Material UI
+
+### Style
+
+combine style-loader with css-loader thenn add to webpack config
+
+add styling to `style.css` file
+
+```css
+body {
+background: green;
+}
+```
+
+then add _import "./style.css"_ to `component.js` file
+
+### `webpack.config.js`
+
+```js
+module.exports = {
+module: {
+rules: [
+    {
+    test: /\.css$/i,
+    use: ["style-loader", "css-loader"],
+    },
+],},};
+```
 
 #### Dependencies
 
 #### Footer
 
-- Main resource used
+- Main resources used
 
 [https://medium.com/geekculture/setting-up-a-react-app-from-scratch-withwebpack-babel-and-eslint-57eb3dcaf2e9]
+
+[https://reactgo.com/semantic-ui-react/]
