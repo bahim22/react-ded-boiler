@@ -1,13 +1,13 @@
-.body{
+body{
     margin:20px;
     padding: 20px;
     border: 2px solid gray;
     background-color: rgb(184, 224, 250);
 },
-.h1{
+h1{
     color: teal
 },
-.container{
+container{
     box-sizing: border-box;
     max-width: 34rem;
     padding: 0 1rem;
@@ -18,4 +18,11 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+}
+article {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-color: white
 }

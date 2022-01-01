@@ -1,17 +1,17 @@
 import React from "react"
-import "./Form.css"
+import "./App.css"
 import Header from "./header"
 export default function Black() {
     return (
     <>
-    <div className="body">
-    <div className="container">
-    <Header />
-    </div>
-    <article>
-        <h1 className="h1">Hima </h1>
-    </article>
-    </div>
+        <div className="body">
+            <div className="container">
+                <Header />
+            </div>
+            <article>
+                <h1 className="article">Hima </h1>
+            </article>
+        </div>
     </>
     )
 }
