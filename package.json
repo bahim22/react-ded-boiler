@@ -1,6 +1,6 @@
 {
-    "name": "rxt-wp-d2",
-    "version": "1.0.0",
+    "name": "react-ded-boiler",
+    "version": "3.0.0",
     "main": "index.js",
     "license": "MIT",
     "dependencies": {
@@ -17,14 +17,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/bahim22/rxtWpD2.git"
+        "url": "git+https://github.com/bahim22/react-ded-boiler.git"
     },
-    "keywords": [],
-    "author": "Ibrahima Balde",
+    "keywords": [React, Webpack, Babel, PostCSS, boilerplate, development],
+    "author": "Hima Balde (Dionysus Era)",
     "bugs": {
-        "url": "https://github.com/bahim22/rxtWpD2/issues"
+        "url": "https://github.com/bahim22/react-ded-boiler/issues"
     },
-    "homepage": "https://github.com/bahim22/rxtWpD2#readme",
+    "homepage": "https://github.com/bahim22/react-ded-boiler#readme",
     "devDependencies": {
         "@babel/core": "^7.15.0",
         "@babel/preset-env": "^7.15.0",
