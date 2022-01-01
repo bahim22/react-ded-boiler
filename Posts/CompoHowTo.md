@@ -64,7 +64,7 @@ my-app/
 ```html
   <script src="./bundle.js "></script>
   ```
-  
+
 -
 
 ...
@@ -133,3 +133,13 @@ require('@tailwindcss/typography')
 
 ...
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+```html
+<html><script type="text/javascript">window["_gaUserPrefs"]= {
+        ioo: function() {
+            return true;
+        }
+    }
+
+    </script><head><meta name="viewport" content="width=device-width"><meta charset="utf-8"><link rel="icon" href="/favicon.ico"><meta name="description" content="Full stack website made with Next.js, React.js, JSX, Css Modules. Dionysus Era next.js website"><meta name="twitter:card" content="summary_large_image"><meta name="og:title" content="Next Dionysus Era"><link rel="preload" as="image" imagesrcset="/_next/image?url=%2Fimages%2FDedd-full.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2FDedd-full.jpg&amp;w=640&amp;q=75 2x"><meta name="next-head-count" content="7"><link rel="preload" href="/_next/static/css/ef71ac31c9b75cbf.css" as="style"><link rel="stylesheet" href="/_next/static/css/ef71ac31c9b75cbf.css" data-n-g=""><link rel="preload" href="/_next/static/css/69d054558b8423b4.css" as="style"><noscript data-n-css=""></noscript><style data-n-href="/_next/static/css/50e09c9f901ba5ee.css">
+```
