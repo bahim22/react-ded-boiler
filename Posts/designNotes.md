@@ -1,10 +1,6 @@
 
 # Notes for Config Files
 
-```bash
-npm install
-```
-
 ## React
 
 ```bash
@@ -18,27 +14,17 @@ npm install react react-dom
 - index.html w/ div elem and script tag
 - create src dir w/ App.js and index.js
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
 ## Dir Info Table
 
-|Folder  |Files      |         Info|
-|:--- | :---: | :---: |
-|**root**| `code block`|data3|
-|**src**| `code block`|data3|
-|**components**| `code block`|data3|
-|**index.js**| entry for React using the renderer |data3|
-|**App.js**| file that imports the projects other components|data3|
-|**index.html**| `code block`|data3|
-|\|escape pipe|\`backtick|data13|
-|cell data1|cell data2|cell data3|
-|cell data1|cell data2|cell data3|
-|cell data1|cell data2|cell data3|
+|Folder  |Files      | 
+|:--- | :---: | 
+|**root**| `main project folder "/"`|
+|**src**| `js and css files`|
+|**components**| `jsx files`|
+|**index.js**| entry for React using the renderer |
+|**App.js**| file that imports the projects other components|
+|**index.html**| Root div |
 
-|Header1 |Header2  | Header3|
-|:--- | ---: | :---:|
-|Align left| Align right|center text|
-|cell data1|cell data2|cell data3|
 
 ### Webpack
 
@@ -60,18 +46,7 @@ npm install --save-dev webpack webpack-dev-server webpack-cli html-loader html-w
 entry: main js file (index.js)
 output: tells webP to create a /dist folder and name file bundle.js and to serve from contentBase config
 module: config for the loaders (packages) installed
-add sourcemap config tag w/ devtool tag
-
-### Images
-
-```html
-<img src="img/webP-env.png" alt="webpack env table" title="WebPack config" height="150"/>
-```
-
-![text](myphoto.png){ width=60%,height:30px }
- [![image alt text](image URL link)](anchor link)
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\
+add sourcemap config tag w/ devtool
 
 ### Babel
 
@@ -80,16 +55,14 @@ add sourcemap config tag w/ devtool tag
 ```bash
 npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader
 ```
-<!-- paraphrase and table before production-->
+
 @babel/core: Main dependency that includes the babel transform script.
-@babel/preset-env: Transform ES6+ into valid ES5 code. Optionally configures browser polyfills automatically.
+@babel/preset-env: Transform ES6+ into valid ES5 code.
 @babel/preset-react: extends Babel support to JSX.
-babel-loader: Webpack loader that hooks Babel into webpack. We will run Babel from webpack with this package.
+babel-loader: Webpack loader that hooks Babel into webpack.
 
 - add babel info in the webpack.config.js file and configure
 - create `.babelrc` file and add presets and plugin configs
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 ### EsLint
 
@@ -99,15 +72,11 @@ npm --save-dev install eslint eslint-loader babel-eslint eslint-config-react esl
 
 install dep then run eslint --init
 
-\\\\\\\\\\\\\\\\\\\\\\\\
-
 ### Prettier
 
 ```bash
 npm install
 ```
-
-\\\\\\\\\\\\\\\\\\\\\\\\
 
 ### CSS
 
@@ -116,10 +85,8 @@ npm install
 ```
 
 - Less
-_ Bootstrap
+- Bootstrap
 - Tailwind
-- `Semantic UI`
-- Material UI
 
 ### Style
 
@@ -147,8 +114,6 @@ rules: [
     },
 ],},};
 ```
-
-#### Dependencies
 
 #### Footer
 
