@@ -1,70 +1,73 @@
 
-# Dionysus Era Dev **rxtWpD2**
-
-## Info
-
----
-Title: `rxtWpD2`
-author: `Hima 'Dionysus Bahim' Balde`
-date: 2021/12/30
-description: Custom React App w/ custom WebPack & Babel configs
-tag: web dev
+# `Dionysus Era Development (DED)` 
 
 ---
 
-### Notes for New React App
+## Repo Info
 
-| **Build Info** | **Description**                                            |
-| ------------ | ----------------------------------------------------------|
-| Frame    | `React` App built with `JSX` `TypeScript` `HTML` `CSS` |
-| Config   | `Webpack` Bundler `Babel` Transpiler `NPM/npx` Package Mngr |
-| Style    | `Semantic-UI` `Tailwindcss` `React-Bootstrap` `CSS-Modules` |
-| Deploy   | [DionysusEra](dio-nxt-app.vercel.app/) on `Vercel` |
-| Pages    | _Landing Page, About Page, Contact Page, Documentation_ |
-| Outline   | _Components, layout, dynamic-routing, SSR, API_ |
 
-...
+| Title  | Date  | Author | Description   | 
+|------------|---------------|----------------|-----------------------------------|
+| react-ded-boiler |  12/30/2021    | `Hima Balde` | Custom React App configured for WebPack & Babel |
 
-``` jsx
+| Type     | Use Case  | Completed | OS   | 
+|------------|---------------|----------------|---------------------------|
+| React Boilerplate ⚛️ | Starter Project |  <ul><li>[x] Master 🏁 </li></ul> | [x] macOS ✔️ |
 
-import React from 'react'
+### App Info
 
-export default Black = () => {
-   return (
-    <div>
-        <Link>
-            <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150">
-            Last Ones Left
-            </iframe>
-        </Link>
-    </div>
-   )};
+| **Build Info** | **Content**  | **Dependencies** |
+| ------------ | ----------------- | ----------------------------------------- |
+| Lib & Lang | `React` `JSX` `HTML` `CSS` `json`  | <ul><li> [x] completed </li> |
+| Config   | `Webpack` Bundler `Babel` Transpiler `NPM/npx` Package Manager | <ul><li> [x] completed </li> |
+| UI/UX | `Bootstrap` `Tailwindcss` `React-Bootstrap` `SCSS SASS`| <ul><li> [ ] customizable</li></ul> |
+| Deployable | `Vercel` `Azure` `GitHub Pages` | <ul><li> [ ] Build for Production </li></ul> |
+| Folders  | _Root, Src, Posts, Public_ |<ul><li> [ ] customizable</li></ul> |
+| Outline  | _Components, Layout, Configuration, Testing_ | <ul><li> [x] completed </li> |
+
+---
+
+### Getting Started
+
+``` bash
+git clone 
+npm install
+
 ```
 
-### Boilerplate Usage and Next Projects
+---
+   
+#### Web Development Info
+   
+`**Resources & Citation**`
 
-|`Contact me` Let me know what you think of the code. |
-| -------------------------------------------------- |
-|`Next Steps` adding api, cloning to diff repo, adding pages, design, SEO  |
-| -/-/-/-/-/-/-/-/-/-/-/-/-\-\-\-\-\-\-\-\-\-\-2-2-/-/-/-/-/-/-/-/-/-/-/---|
+> Links
 
+- [dev.to/iamismile](https://dev.to/iamismile/how-to-setup-webpack-and-babel-for-react-59ph/)
 
-...
+- [dev.to/deadwing7x](https://dev.to/deadwing7x/setup-a-react-app-with-webpack-and-babel-4o3k)
 
-#### Links
+##### `Deployed Projects` [^1].
 
-1. [Next.js](https://nextjs.org) [Vercel](http://vercel.com)
-2. `**Templates**`
-  -[Tut/Temp](https://dev.to/iamismile/how-to-setup-webpack-and-babel-for-react-59ph/)
-  -[Tut/Temp2](https://dev.to/deadwing7x/setup-a-react-app-with-webpack-and-babel-4o3k)
+[^1]: Footnote [Next.js](https://nextjs.org) [Vercel](http://vercel.com)
 
-- Footnote [^1].
+| Projects   | Type | Version | Status   | 
+|------------|---------------|----------------|----------|
+| `Dionysus Era`| Business Main Website | Editing & Styling | <ul><li> [ ] todo</li></ul> |
+| `Hima Balde`  | Personal Portfolio |  Final v 1 & Building v 2 | <ul><li>[x] done & [] 📋 </li></ul> |
+| `Inner Sity Market`| Marketing Business Website | Final v 2 | <ul><li>[x] done</li></ul> |
+| `ISM-DED` | e-commerce |  Work in progress | <ul><li>[ ] concept</li></ul> |
 
-[^1]: Footnote **GitHub Profile for{...}** **[`Hima-Balde`](https://github.com/bahim22)**
-[^1]: Footnote **Deployed Projects:**
+###### `Aliases & Affiliations` [^2].
 
-  -`DED` > Business Profile
-  -`Inner Sity Market` > Marketing Business App
-  -`Ibrahima Balde` > Portfolio Site
-  -`Dionysus Era Blog` >Business Blog
-  
+[^2]: Footnote GitHub Profile **[`Hima-Balde`](https://github.com/bahim22)**
+
+**Pseudonym/Nom de Guerre**
+- Bahim22
+- Dionysus
+
+**Affiliations**
+- Inner Sity Market (ISM)
+- Dionysus Era Dev (DED)
+ 
+---
