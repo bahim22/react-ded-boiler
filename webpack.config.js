@@ -34,30 +34,13 @@ module.exports = {
   // add a custom index.html as the template
   plugins: [new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'public', 'index.html') })]
 };
+
+
+
 /**
- * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
- * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
- *
-//////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-const path = require('path');
-module.exports = {
-    entry: './src/index.js',
-    output: {
-            filename: 'bundle.js',
-            path: path.join(__dirname, 'public')
-    },
-    module: {
-            rules: [{
-                loader: 'babel-loader',
-                test: /\.js$/,
-                exclude: /node_modules/
-            }]
-    },
-    mode: 'development'
-};
+// Config Option 2 (needs tested)
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 import { join } from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
@@ -86,7 +69,9 @@ export const module = {
   ]
 }
 export const plugins = [new HtmlWebpackPlugin({ template: './src/index.html' })]
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+//Config option 3(edits needed)
+
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
