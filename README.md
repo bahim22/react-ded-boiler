@@ -1,7 +1,7 @@
 
 # `Dionysus Era Development (DED)` 
 
----
+___
 
 ## Repo Info
 
@@ -12,7 +12,9 @@
 
 | Type     | Use Case  | Completed | OS   | 
 |------------|---------------|----------------|---------------------------|
-| React Boilerplate ⚛️ | Starter Project |  [x] Master 🏁 | [x] macOS ✔️ |
+| React Boilerplate ⚛️ | Starter Project |   Master 🏁 |  macOS ✔️ |
+
+___
 
 ### App Info
 
@@ -25,17 +27,16 @@
 | Folders  | _Root, Src, Posts, Public_ |<ul><li> [ ] customizable |
 | Outline  | _Components, Layout, Configuration, Testing_ |  [x] completed  |
 
----
+___
 
 ### Getting Started
 
 ``` bash
 git clone https://github.com/bahim22/react-ded-boiler.git
 npm install
-
 ```
 
----
+___
    
 #### Web Development Info
    
@@ -47,9 +48,7 @@ npm install
 
 - [dev.to/deadwing7x](https://dev.to/deadwing7x/setup-a-react-app-with-webpack-and-babel-4o3k)
 
-##### `Deployed Projects` [^1].
-
-[^1]: Footnote [Next.js](https://nextjs.org) [Vercel](http://vercel.com)
+##### `Current Projects`
 
 | Projects   | Type | Version | Status   | 
 |------------|---------------|----------------|----------|
@@ -70,4 +69,4 @@ npm install
 - Inner Sity Market (ISM)
 - Dionysus Era Dev (DED)
  
----
+___
