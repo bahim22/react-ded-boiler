@@ -117,3 +117,31 @@ module.exports = {
   }
 }
 ```
+
+## CSS DESIGN
+
+> `CSS-loader`
+
+1. _allows use of import Styles from './styles.css'_ or
+2. _import { style1, style2 } from './styles.css'_
+
+```html
+<div className={Style.style1}> 1. Hello World</div>
+```
+
+```html
+- <div className={style1}> 2. Hello World </div>
+```
+
+- _or (3) with the destructuring syntax_
+  - can write css rules via: .home-button {...} ex.
+
+```jsx
+> import { homeButton } from './styles.css'
+```
+
+> run `npm install` --save package-name or `yarn add` package-name to save a lib as a dep (as opposed to a devdep)
+
+- use default imports/exports if the module has 1 component
+- use named exports wj/ utility mods exporting multiple func
+- can only have one default exp. but several named exp.
