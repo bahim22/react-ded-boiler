@@ -13,7 +13,6 @@ description: React App w/ custom WP configs and CSS
 tag: web dev, jsx, tsx, mdx
 
 ---
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 ## General React App Dir
 
@@ -30,18 +29,20 @@ tag: web dev, jsx, tsx, mdx
   - Posts Dir
   - Styles Dir
 
-...
-
 ### Specific Project structure for this App
 
 my-app/
+
   > README.md
   > node_modules/
   > package.json
+
   > `public/`
     - **index.html**_page template_
     - favicon.ico
+
   > `src/`
+
     - App.css
     - App.js
     - App.test.js
@@ -53,8 +54,9 @@ my-app/
 
 1. Put all JS and CSS files in src
 2.`index.html`
+
 **Contains**
->
+
 - what's visibile to your users
 - Only files inside the `public` folder can be referenced from the HTML.
 - You can add webfonts, meta tags, or analytics to this file.
@@ -63,13 +65,7 @@ my-app/
 
 ```html
   <script src="./bundle.js "></script>
-  ```
-
--
-
-...
-
-...
+```
 
 #### Component Structure and Mapping
 
@@ -82,43 +78,11 @@ my-app/
 
 | ----------------------------------------------------------------------------------------- |
 
-...
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-#### MARKDOWN, MD LINTING INFO, PRETTIER INFO *
-
-...
-
-[`Prettier`](https://prettier.io) can work w/ `markdownlint`
-**markdownlint with Prettier** List item indentation
-
-> `markdownlint` and `Prettier` lint well if configured properly
-    - If `Prettier` is used with `--tab-width` `4`, then `markdownlint` config should be adjusted:
-
-```json
-{
-  "MD007": {
-    "indent": 4
-  },
-  "MD030": {
-    "ul_single": 3,
-    "ul_multi": 3
-  }
-}
-```
-
-...
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
 ### TAILWIND info
-
-...
 
 ```bash
 **npm install** -tailwindcss@latest- -@tailwindcss/typography- -postcss@latest- -autoprefixer@latest-
 **npx tailwindcss init -p**
-
 //add this to tailwind.config.js
 plugins: [
 require('@tailwindcss/typography')
@@ -137,15 +101,12 @@ require('@tailwindcss/typography')
 - create webpack.config.js file
 - installs include bootstrap, tailwind, lodash
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
 ```bash
 npm install --save-dev webpack webpack-cli @babel/preset-react babel-loader @babel/core @babel/preset-env @hot-loader/react-dom webpack-dev-server css-loader style-loader html-webpack-plugin postcss-loader autoprefixer jest babel-jest css-loader style-loader file-loader url-loader lodash-webpack-plugin prettier
 npm install react react-dom react-hot-loader bootstrap jquery popper.js tailwindcss lodash
 ```
 
 ```js 
-
 const path = require('path');
 
 module.exports = {
@@ -155,5 +116,4 @@ module.exports = {
     filename: 'bundle.js'
   }
 }
-
 ```
