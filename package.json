@@ -19,7 +19,7 @@
         "type": "git",
         "url": "git+https://github.com/bahim22/react-ded-boiler.git"
     },
-    "keywords": ['React, Webpack, Babel, PostCSS, boilerplate, development'],
+    "keywords": ["React, Webpack, Babel, PostCSS, boilerplate, development"],
     "author": "Hima Balde (Dionysus Era)",
     "bugs": {
         "url": "https://github.com/bahim22/react-ded-boiler/issues"
