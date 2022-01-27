@@ -13,7 +13,7 @@ module.exports = {
     filename: 'bundle.js'
   },
    devServer: {
-   port: 3000,
+   port: 3050,
  },  // Rules of how webpack will take files, complie/bundle them for browser
   module: {
     rules: [

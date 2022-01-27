@@ -1,7 +1,7 @@
-
 # Documentation for creating Components
 
 ---
+
 title: 'Component Information'
 
 author: 'Hima 'Dionysus' Balde'
@@ -16,7 +16,7 @@ tag: web dev, jsx, tsx, mdx
 
 ## General React App Dir
 
->Directory Structure
+> Directory Structure
 
 - `**Public**`
 - `index.html` _gateway_ of the react app that's being loaded via _root id_ which is where the app will run
@@ -33,15 +33,16 @@ tag: web dev, jsx, tsx, mdx
 
 my-app/
 
-  > README.md
-  > node_modules/
-  > package.json
+> README.md
+> node_modules/
+> package.json
 
-  > `public/`
+> `public/`
+
     - **index.html**_page template_
     - favicon.ico
 
-  > `src/`
+> `src/`
 
     - App.css
     - App.js
@@ -52,8 +53,7 @@ my-app/
 
 ### More info for main files
 
-1. Put all JS and CSS files in src
-2.`index.html`
+1. Put all JS and CSS files in src 2.`index.html`
 
 **Contains**
 
@@ -64,7 +64,7 @@ my-app/
 - The build script for bundler
 
 ```html
-  <script src="./bundle.js "></script>
+<script src="./bundle.js "></script>
 ```
 
 #### Component Structure and Mapping
@@ -106,15 +106,15 @@ npm install --save-dev webpack webpack-cli @babel/preset-react babel-loader @bab
 npm install react react-dom react-hot-loader bootstrap jquery popper.js tailwindcss lodash
 ```
 
-```js 
-const path = require('path');
+```js
+const path = require('path')
 
 module.exports = {
-  entry: './src/app.js',
-  output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js'
-  }
+	entry: './src/app.js',
+	output: {
+		path: path.join(__dirname, 'public'),
+		filename: 'bundle.js',
+	},
 }
 ```
 
@@ -126,11 +126,12 @@ module.exports = {
 2. _import { style1, style2 } from './styles.css'_
 
 ```html
-<div className={Style.style1}> 1. Hello World</div>
+<div className="{Style.style1}">1. Hello World</div>
 ```
 
 ```html
-- <div className={style1}> 2. Hello World </div>
+-
+<div className="{style1}">2. Hello World</div>
 ```
 
 - _or (3) with the destructuring syntax_
@@ -146,7 +147,7 @@ module.exports = {
 - use named exports wj/ utility mods exporting multiple func
 - can only have one default exp. but several named exp.
 
-___
+---
 
 ## WEBPACK config file
 
@@ -162,7 +163,7 @@ npm install webpack webpack-cli --save-dev
 
 > `Babel`
 
-- @babel/core  _main dep for Babel_ --transpiler--
+- @babel/core _main dep for Babel_ --transpiler--
 - @babel/preset-env lets you code es'15-'17 & Babel auto detect/transpile
 - @babel/preset-react (ID that it's a react app to convert jsx to JS)
 - ~@babel/plugin-proposal-class-properties (Use class properties)~
