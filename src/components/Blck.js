@@ -1,5 +1,6 @@
 import React from 'react'
-export default function Black() {
+
+export default function Blck() {
 	return (
 		<>
 			<div className="condiv">

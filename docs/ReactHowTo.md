@@ -1,4 +1,4 @@
-# Documentation for creating Components
+# Documentation for building a React App
 
 ---
 
@@ -6,7 +6,7 @@ title: 'Component Information'
 
 author: 'Hima 'Dionysus' Balde'
 
-date: 2021/12/29
+original date: 2021/12/29
 
 description: React App w/ custom WP configs and CSS
 

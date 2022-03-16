@@ -1,12 +1,12 @@
 import React from 'react'
-import Black from './black'
+import Blck from './components/Blck'
 import './App.css'
 
 function App() {
 	return (
 		<container>
 			<h1>Welcome to DED</h1>
-			<Black />
+			<Blck />
 		</container>
 	)
 }
