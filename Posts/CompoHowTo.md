@@ -19,7 +19,7 @@ tag: web dev, jsx, tsx, mdx
 > Directory Structure
 
 - `**Public**`
-- `index.html` _gateway_ of the react app that's being loaded via _root id_ which is where the app will run
+- `index.html` _gateway_ of the react app that's being loaded via _root id_ (where the app runs)
 - `**Src**`
   - `index.js` _imports, renders_ , it's the projects JS **entry-point**
   - `App.js` contains root app component, all project compo and pushed to _root div_
@@ -36,7 +36,6 @@ my-app/
 > README.md
 > node_modules/
 > package.json
-
 > `public/`
 
     - **index.html**_page template_
@@ -55,7 +54,7 @@ my-app/
 
 1. Put all JS and CSS files in src 2.`index.html`
 
-**Contains**
+## **Contains**
 
 - what's visibile to your users
 - Only files inside the `public` folder can be referenced from the HTML.
@@ -64,10 +63,10 @@ my-app/
 - The build script for bundler
 
 ```html
-<script src="./bundle.js "></script>
+  <script src="./bundle.js "></script>
 ```
 
-#### Component Structure and Mapping
+### Component Structure and Mapping
 
 | ------------------------------------------------------------------------------------------ |
 
@@ -81,12 +80,14 @@ my-app/
 ### TAILWIND info
 
 ```bash
-**npm install** -tailwindcss@latest- -@tailwindcss/typography- -postcss@latest- -autoprefixer@latest-
-**npx tailwindcss init -p**
-//add this to tailwind.config.js
-plugins: [
-require('@tailwindcss/typography')
-]
+
+  **npm install** -tailwindcss@latest- -@tailwindcss/typography- -postcss@latest- -autoprefixer@latest-
+  **npx tailwindcss init -p**
+  //add this to tailwind.config.js
+  plugins: [
+  require('@tailwindcss/typography')
+  ]
+
 ```
 
 > `add` in to the styles/globals.css
@@ -101,21 +102,21 @@ require('@tailwindcss/typography')
 - create webpack.config.js file
 - installs include bootstrap, tailwind, lodash
 
-```bash
-npm install --save-dev webpack webpack-cli @babel/preset-react babel-loader @babel/core @babel/preset-env @hot-loader/react-dom webpack-dev-server css-loader style-loader html-webpack-plugin postcss-loader autoprefixer jest babel-jest css-loader style-loader file-loader url-loader lodash-webpack-plugin prettier
-npm install react react-dom react-hot-loader bootstrap jquery popper.js tailwindcss lodash
-```
+  ```bash
+  npm install --save-dev webpack webpack-cli @babel/preset-react babel-loader @babel/core @babel/preset-env @hot-loader/react-dom webpack-dev-server css-loader style-loader html-webpack-plugin postcss-loader autoprefixer jest babel-jest css-loader style-loader file-loader url-loader lodash-webpack-plugin prettier
+  npm install react react-dom react-hot-loader bootstrap jquery popper.js tailwindcss lodash
+  ```
 
 ```js
-const path = require('path')
+  const path = require('path')
 
-module.exports = {
-	entry: './src/app.js',
-	output: {
-		path: path.join(__dirname, 'public'),
-		filename: 'bundle.js',
-	},
-}
+  module.exports = {
+  entry: './src/app.js',
+  output: {
+    path: path.join(__dirname, 'public'),
+    filename: 'bundle.js',
+  },
+  }
 ```
 
 ## CSS DESIGN

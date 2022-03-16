@@ -22,7 +22,7 @@
 | Config         | `Webpack` Bundler `Babel` Transpiler `NPM/npx` Package Manager | [x] completed             |
 | UI/UX          | `Bootstrap` `Tailwindcss` `React-Bootstrap` `SCSS SASS`        | [ ] customizable          |
 | Deployable     | `Vercel` `Azure` `GitHub Pages`                                | [ ] Build for Production  |
-| Folders        | _Root, Src, Posts, Public_                                     | <ul><li> [ ] customizable |
+| Folders        | _Root, Src, Posts, Public_                                     | [ ] customizable |
 | Outline        | _Components, Layout, Configuration, Testing_                   | [x] completed             |
 
 ---
@@ -55,16 +55,16 @@ npm install
 | `Inner Sity Market` | Marketing Business Website | Final v 2                | [x] done         |
 | `ISM-DED`           | e-commerce                 | Work in progress         | [ ] concept      |
 
-###### `Aliases & Affiliations` [^2].
+###### `Aliases & Affiliations` [^2]
 
 [^2]: Footnote GitHub Profile **[`Hima-Balde`](https://github.com/bahim22)**
 
-**Pseudonym/Nom de Guerre**
+###### **Pseudonym/Nom de Guerre**
 
 - Bahim22
 - Dionysus
 
-**Affiliations**
+###### **Affiliations**
 
 - Inner Sity Market (ISM)
 - Dionysus Era Dev (DED)
