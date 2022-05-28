@@ -9,6 +9,8 @@ node_modules
 # testing
 /coverage
 
+365notes/**
+/365notes
 # next.js
 /.next/
 /out/

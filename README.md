@@ -1,5 +1,7 @@
 # `Dionysus Era Development (DED)`
 
+## Currently adjusting with development config from my [`Portfolio`](https://github.com/bahim22/rxt-portfo3) ecrive repos to reflect changes in Webpack5 and React18
+
 ---
 
 ## Repo Info

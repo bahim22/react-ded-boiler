@@ -4,10 +4,12 @@ import './App.css'
 
 function App() {
 	return (
-		<container>
+		<>
+		<div className='container'>
 			<h1>Welcome to DED</h1>
 			<Blck />
-		</container>
+		</div>
+		</>
 	)
 }
 

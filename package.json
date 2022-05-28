@@ -1,21 +1,26 @@
 {
     "name": "react-ded-boiler",
-    "version": "4.0.0",
+    "version": "5.0.0",
     "main": "index.js",
     "license": "MIT",
-    "description": "React.js Template/Boilerplate to bootstrap a react app with customized configurations. Updated regularly and used in several of my projects as an alternative to Create-React-App.",
+    "description": "React.js Template/Boilerplate to bootstrap a react app with customized configurations. Updated for Webpack and React version updates",
     "scripts": {
-        "install": "npm install && npm update",
-        "lint": "eslint \"src/**/*.{js,jsx}\"",
-        "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix",
-        "prettier": "npx prettier --write .",
-        "test:webpack": "npx webpack --config webpack.config.js",
-        "build": "webpack --mode production",
-        "start": "webpack serve --mode development"
+        "webhint": "hint http://localhost:7272 && hint ",
+        "prettier:check": "npx prettier --check \"src/**/*.{js,jsx}\"",
+        "prettier:write": "npx prettier --write \"src/**/*.{js,jsx}\"",
+        "test:espretty": "npx eslint-config-prettier \"src/**/*.{js,jsx}\"",
+        "lint:fix": "npx eslint \"src/**/*.{js,jsx}\" --fix",
+        "test:lint-rules": "eslint \"src/**/*.{js,jsx}\" --config .eslintrc.json",
+        "configtestpro": "npx webpack configtest webpack.config.production.js",
+        "configtestdev": "npx webpack configtest webpack.config.development.js",
+        "build": "NODE_ENV=production npx webpack build --config webpack.config.production.js --mode production --node-env production",
+        "devStats": "npx webpack  --config webpack.config.development.js --stats-error-details=true --mode development --node-env development",
+        "devServ": "npx webpack serve --config webpack.config.development.js --mode development --node-env development",
+        "proServ": "serve -s dist",
+        "clean": "rm -f dist/*"
     },
     "repository": {
-        "type": "git",
-        "url": "git+https://github.com/bahim22/react-ded-boiler.git"
+        "url": "https://github.com/bahim22/react-ded-boiler"
     },
     "keywords": [
         "React, Webpack, Babel, PostCSS, boilerplate, development"
@@ -24,9 +29,8 @@
     "bugs": {
         "url": "https://github.com/bahim22/react-ded-boiler/issues"
     },
-    "homepage": "https://github.com/bahim22/react-ded-boiler#readme",
+    "homepage": "/",
     "dependencies": {
-        "prop-types": "^15.8.0",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-router-dom": "^6.2.1"
@@ -52,5 +56,17 @@
         "webpack": "^5.65.0",
         "webpack-cli": "^4.9.1",
         "webpack-dev-server": "^4.7.2"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 safari version",
+            "last 1 edge version"
+        ]
     }
 }
